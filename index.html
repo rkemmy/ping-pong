@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+      <title>Ping-Pong</title>
+    </head>
+    <body>
+      <div class="container">
+        <!--<svg viewBox="0 0 960 300">
+	        <symbol id="s-text">
+		        <text text-anchor="middle" x="50%" y="80%">Ping-Pong</text>
+	        </symbol>
+
+	        <g class = "g-ants">
+		        <use xlink:href="#s-text" class="text-copy"></use>
+		        <use xlink:href="#s-text" class="text-copy"></use>
+		        <use xlink:href="#s-text" class="text-copy"></use>
+		        <use xlink:href="#s-text" class="text-copy"></use>
+		        <use xlink:href="#s-text" class="text-copy"></use>
+	        </g>
+        </svg>-->
+        <h2>Play If You Dare</h2>
+          <h4>Rules</h4>
+            <ol>
+              <li>Numbers divisible by 3 become ping.</li>
+              <li>Numbers divisible by 5 become pong</li>
+              <li>Numbers divisible by both 3 and 5 become ping-pong</li>
+            </ol>
+
+        <form id="ping-pong">
+          <div class="form-group">
+            <label for="number">Enter your number here:</label>
+            <input id="userInput" type="number">
+          </div>
+
+          <button type="submit" class="btn">Ping Pong!</button>
+        </form>
+
+        <ul id="result">
+
+        </ul>
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/scripts.js"></script>
+      </div>
+    </body>
+  </html>
