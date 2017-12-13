@@ -16,3 +16,16 @@ function pingPong (input){
     }
   }
 }
+$(document).ready(function(event){
+   $("form#ping-pong").submit(function(event){
+      event.preventDefault();
+      var input =$("input#userInput").val();
+
+      pingPong(input);
+
+
+      randomNumber.forEach(function(element){
+         $("#result").append("<li>" + element + "</li>");
+      });
+   });
+});
